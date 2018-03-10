@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+span.tittle {
+    font-weight: 400;
+    color: #1ac056;
+}
+
+section,
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.section-header {
+    font-weight: 100;
+}
+
+section .row {
+    width: 100%;
+    margin: 0;
+}
+
+/* ---- Navbar Style ---- */
+
+#navigation-bar {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-bottom: solid 1px #9f9f9f;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: .9em;
+    letter-spacing: 1px;
+    margin-left: 10px;
+
+    color: #1ac056;
+
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+
+    transition: 0.3s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #291f1a;
+}
+
+button[class="navbar-toggler"] {
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/* Navbar Style - END - */
+
+/* ---- Header Section ---- */
+
+#main-header {
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+#main-header .container.d-flex {
+    height: 100%;
+}
+
+.header-tittle * {
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+}
+
+.header-tittle h2 {
+    font-size: 2.2em;
+}
+
+/* Header Section - END - */
+
+/* ---- About Section ---- */
+
+#about {
+    background-color: #fbffff;
+    box-shadow: -1px 7px 17px rgba(136, 136, 136, 0.17);
+}
+
+.img-container img {
+    width: 50%;
+    display: inline-block;
+
+    border: 15px solid white;
+}
+
+/* About Section - END - */
+
+/* ---- Skills Section ---- */
+
+#skills figure {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Skills Section - END - */
+
+/* ---- Portfolio Section ---- */
+
+#portfolio #item1 {
+    background-image: url(../img/portfolio1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio #item2 {
+    background-image: url(../img/portfolio2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio #item3 {
+    background-image: url(../img/portfolio3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.pf-item {
+    height: 350px;
+    padding: 0;
+
+    border: 1px solid white;
+}
+
+.darken-item {
+    background-color: rgba(67, 92, 116, 0.65);
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    transition: all .4s ease-out;
+    opacity: 0;
+}
+
+.darken-item:hover {
+    opacity: 1;
+}
+
+.darken-item::after {
+    content: "";
+    position: absolute;
+
+    width: 93%;
+    height: 93%;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: solid 1px white;
+
+}
+
+.item-content {
+    width: 100%;
+    padding: 10%;
+    z-index: 10;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: white;
+}
+
+.item-content .fa {
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.item-content .fa:hover {
+    color: #1ac056;
+}
+
+/* Portfolio Section - END - */
+
+/* ---- Footer ---- */
+
+footer {
+    background-color: rgb(37, 60, 82);
+    overflow: hidden;
+}
+
+.contact-info div {
+    margin: 25px 0px;
+}
+
+.contact-info a {
+    color: #1ac056;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #16e05f;
+}
+
+.social > a > i {
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    transition: all 0.3s linear;
+}
+
+.social > a > i:hover {
+    color: #16e05f;
+}
+
+footer form {
+    text-align: right;
+}
+
+form input.form-control,
+textarea.form-control {
+    margin: 10px 0px;
+    padding: 15px 7px;
+
+    background-color: #36536f;
+    color: white;
+
+    border: 0;
+    border-radius: 0;
+
+    transition: all 0.3s ease-out;
+}
+
+form input.form-control:focus,
+textarea.form-control:focus {
+    color: white;
+    background-color: #527190;
+}
+
+form input.form-control:hover,
+textarea.form-control:hover {
+    background-color: #527190;
+}
+
+form ::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+form input[type="submit"] {
+    display: inline-block;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+
+    border: 0px;
+    border-radius: 0;
+
+    padding: 15px;
+    width: 100px;
+
+    background-color: #1ac056;
+
+    margin-bottom: 30px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #18db5f;
+
+}
+
+.copyright {
+    background-color: rgb(14, 40, 65);
+    color: white;
+
+    padding: 5px;
+    margin: 0;
+
+    overflow: hidden;
+}
